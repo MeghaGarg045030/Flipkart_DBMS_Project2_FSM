@@ -1,17 +1,15 @@
 # Flipkart_DBMS_Project2_FSM
 
-In this project we used Bank Customer details that we have segmented using K-means Machine Learning clustering algorithm and applied various supervised learning algorithms to classify the features in the data and find the optimal algorithm and its important features. Also, provided insights on how bank can use tailored bank strategies for different classes.
+This project presents an Entity-Relationship Diagram (ERD) for Flipkart's e-commerce platform, using a top-down approach to model core entities like Users, Products, Orders, and Payments. It includes a Data Access Language defining departmental access to database entities, ensuring secure and efficient data management. The design is normalized up to Third Normal Form (3NF) and implemented in SQL, providing a robust, scalable database structure to support key e-commerce operations.
 
-Bank-full.csv: Bank Marketing Dataset (Kaggle)
+- Code file_flipkart.txt: Contains the excecutable SQL code.
 
-index_cluster.csv: Contains cluster number and index variable extracted from unsupervised leanrning project.
+- ERD_flipkart.png: Contains the Entity- Relationship Diagram(ERD) generated on MySQL Workbench for the code.
 
-045030.pdf: Project Report in pdf format
+- Report_flipkart.pdf: Project Report in pdf format
 
-045030_Classification_ML_Supervised_Term_III.ipynb: Contains the executable code as well as the Report of the Classification.
-
-REFERENCES
-Dataset: Kaggle.com (https://www.kaggle.com/datasets/hariharanpavan/bank-marketing-dataset-analysis-classification)
-Code Reference: medium.com, geekforgeeks.com, Resources provided by Prof. Amarnath Mitra
-Google: analytixlabs.co.in, scikit-learn.org
-Other References: chatgpt
+### REFERENCES
+- Code Reference: codeacademy.com
+- Github: https://github.com/harnalashok 
+- Google: flipkart.com
+- Other References: chatgpt
