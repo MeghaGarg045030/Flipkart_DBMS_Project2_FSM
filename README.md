@@ -11,5 +11,5 @@ This project presents an Entity-Relationship Diagram (ERD) for Flipkart's e-comm
 ### REFERENCES
 - Code Reference: codeacademy.com
 - Github: https://github.com/harnalashok 
-- Google: flipkart.com
+- Google: https://www.flipkart.com/ 
 - Other References: chatgpt
