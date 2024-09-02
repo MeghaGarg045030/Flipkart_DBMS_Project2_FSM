@@ -8,26 +8,26 @@ USE flipkart;
 
 -- Create the Users table
 CREATE TABLE Users (
-    userid CHAR(3) PRIMARY KEY,
-    name VARCHAR(100),
-    email VARCHAR(100),
-    password VARCHAR(100),
-    address VARCHAR(255),
-    phonenumber VARCHAR(15)
+    userid CHAR(10) PRIMARY KEY,
+    name VARCHAR(25),
+    email VARCHAR(20),
+    password VARCHAR(20),
+    address VARCHAR(100),
+    phonenumber VARCHAR(11)
 );
 
 
 -- Create the Categories table
 CREATE TABLE Categories (
-    categoryid CHAR(2) PRIMARY KEY,
-    categoryname VARCHAR(100)
+    categoryid CHAR(10) PRIMARY KEY,
+    categoryname VARCHAR(20)
 );
 
 
 -- Create the Products table
 CREATE TABLE Products (
     productid CHAR(10) PRIMARY KEY,
-    productname VARCHAR(100),
+    productname VARCHAR(20),
     price DECIMAL(10, 2),
     categoryid CHAR(2),
     productquantity INT,
@@ -37,20 +37,20 @@ CREATE TABLE Products (
 
 -- Create the Payment table
 CREATE TABLE Payment (
-    paymentid CHAR(4) PRIMARY KEY,
+    paymentid CHAR(10) PRIMARY KEY,
     paymentdate DATE,
     amount DECIMAL(10, 2),
-    paymentmethod VARCHAR(50)
+    paymentmethod VARCHAR(20)
 );
 
 
 -- Create the Orders table
 CREATE TABLE Orders (
-    orderid CHAR(4) PRIMARY KEY,
+    orderid CHAR(10) PRIMARY KEY,
     orderdate DATE,
-    userid CHAR(3),
+    userid CHAR(10),
     totalamount DECIMAL(10, 2),
-    paymentid CHAR(4),
+    paymentid CHAR(10),
     FOREIGN KEY (userid) REFERENCES Users(userid),
     FOREIGN KEY (paymentid) REFERENCES Payment(paymentid)
 );
@@ -58,7 +58,7 @@ CREATE TABLE Orders (
 
 -- Create the OrderDetails table
 CREATE TABLE OrderDetails (
-    orderid CHAR(4),
+    orderid CHAR(10),
     productid CHAR(10),
     quantity INT NOT NULL,
     PRIMARY KEY (orderid, productid),
